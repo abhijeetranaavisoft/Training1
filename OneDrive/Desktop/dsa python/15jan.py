@@ -12,9 +12,6 @@ def sort_012(arr):
             high -= 1
     return arr
 
-# Example usage
-arr = [0, 1, 2, 1, 0, 2, 1, 0]
-print(sort_012(arr))
 
 def max_subarray_sum(arr):
     max_sum = float('-inf')
@@ -24,9 +21,7 @@ def max_subarray_sum(arr):
         max_sum = max(max_sum, current_sum)
     return max_sum
 
-# Example usage
-arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-print(max_subarray_sum(arr))
+
 
 
 def merge_sorted_arrays(arr1, arr2):
@@ -47,9 +42,6 @@ def merge_sorted_arrays(arr1, arr2):
         j += 1
     return merged
 
-# Example usage
-arr1 = [1, 3, 5]
-arr2 = [2, 4, 6]
 print(merge_sorted_arrays(arr1, arr2))
 
 
@@ -63,9 +55,6 @@ def count_pairs_with_sum(arr, target):
         freq[num] = freq.get(num, 0) + 1
     return count
 
-# Example usage
-arr = [1, 5, 7, 1, 5]
-target = 6
 print(count_pairs_with_sum(arr, target))
 
 
@@ -80,7 +69,4 @@ def minimize_tower_heights(arr, k):
         min_diff = min(min_diff, max_height - min_height)
     return min_diff
 
-# Example usage
-arr = [1, 5, 8, 10]
-k = 2
 print(minimize_tower_heights(arr, k))
